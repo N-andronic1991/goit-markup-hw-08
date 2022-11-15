@@ -1,4 +1,5 @@
  .backdrop {
+
  	position: fixed;
  	top: 0;
  	left: 0;
@@ -8,7 +9,9 @@
  	transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
 
  	background-color: var(--backdrop-bgd);
-	overflow-y: scroll;
+	z-index: 999;
+	 overflow-y: auto;
+	
 
  }
 
@@ -38,8 +41,8 @@
 			height: 609px;
 		}
 
-	 @media (min-width: 768px){
-	    width: 528;
+	 @media (min-width: $tablet){
+	    width: 528px;
 	    height: 581px;
 	 }
 	}

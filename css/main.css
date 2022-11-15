@@ -437,6 +437,11 @@ img {
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
+@media (min-width: 768px) {
+  .checkbox__icon {
+    left: 24px;
+  }
+}
 .checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
   border: 0;
@@ -1610,7 +1615,8 @@ img {
   -webkit-transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
   transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
   background-color: var(--backdrop-bgd);
-  overflow-y: scroll;
+  z-index: 999;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -1648,7 +1654,7 @@ img {
 }
 @media (min-width: 768px) {
   .modal {
-    width: 528;
+    width: 528px;
     height: 581px;
   }
 }

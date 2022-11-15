@@ -1,7 +1,7 @@
 .checkbox__control {
 	position: relative;
 	display: flex;
-	align-items: center;
+    align-items: center;
 	justify-content: center;
 	margin-bottom: 30px;
 }
@@ -34,6 +34,10 @@
 	border-radius: 2px;
 	z-index: -1;
 	transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+	@media (min-width: 768px){
+		left: 24px;
+	}
 
 	.checkbox__input:checked + & {
 			background-color: var(--accent-color);
