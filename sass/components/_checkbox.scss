@@ -13,23 +13,22 @@
 }
 
 .checkbox__label {
-	display: block;
 	padding-left: 30px;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
     letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 	
-	// @media (min-width: 768px) {
-	// 	font-size: 14px;
-	// 	line-height: 1.71;
-	// 	}
+	 @media (min-width: 768px) {
+	 	font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .checkbox__icon {
 	position: absolute;
 	top: 50%;
-	left: 24px;
+	left: 16px;
 	transform: translateY(-50%);
 	border: 2px solid var(--main-title-text-color);
 	border-radius: 2px;

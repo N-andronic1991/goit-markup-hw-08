@@ -30,12 +30,12 @@
           </button>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link menu__link--current" href="./index.html"
+              <a class="menu__link" href="./index.html"
                 >Студія</a
               >
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Портфоліо</a>
+              <a class="menu__link menu__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Контакти</a>
@@ -338,96 +338,98 @@
     <!-- Підвал сторінки -->
     <footer class="footer">
       <div class="container footer__content">
-        <div class="footer__first-column">
-          <a class="logo footer__logo" href="./index.html" lang="en"
-            ><span class="logo__part">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a
-                  class="footer__link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__wrap-column">
+          <div class="footer__first-column">
+            <a class="logo footer__logo" href="./index.html" lang="en"
+              ><span class="logo__part">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link--grey"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link--grey"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__second-column">
+            <p class="footer__label">Приєднуйтесь</p>
+            <ul class="socials">
+              <li>
+                <a href="#" class="socials__link footer__socials-link">
+                  <svg
+                    class="socials__icon footer__socials-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a
-                  class="footer__link footer__link--grey"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="#" class="socials__link footer__socials-link">
+                  <svg
+                    class="socials__icon footer__socials-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a
-                  class="footer__link footer__link--grey"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li>
+                <a href="#" class="socials__link footer__socials-link">
+                  <svg
+                    class="socials__icon footer__socials-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="socials__link footer__socials-link">
+                  <svg
+                    class="socials__icon footer__socials-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer__second-column">
-          <p class="footer__label">Приєднуйтесь</p>
-          <ul class="socials">
-            <li>
-              <a href="#" class="socials__link footer__socials-link">
-                <svg
-                  class="socials__icon footer__socials-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socials__link footer__socials-link">
-                <svg
-                  class="socials-icon footer__socials-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socials__link footer__socials-link">
-                <svg
-                  class="socials__icon footer__socials-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socials__link footer__socials-link">
-                <svg
-                  class="socials__icon footer__socials-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form name="subscribe__form">
           <div class="footer__form">
             <div class="footer__form-wrap">
+
               <label class="footer__label" for="user-email"
-                >Підпишіться на розсилку</label
-              >
+                >Підпишіться на розсилку </label>
               <input
                 class="footer__input"
                 type="email"
@@ -435,7 +437,7 @@
                 id="user-email"
                 placeholder="E-mail"
               />
-            </div>
+              </div>
             <button class="button footer__button" type="submit">
               Підписатися
               <svg class="footer__icon-send" width="24" height="24">
@@ -444,7 +446,6 @@
             </button>
           </div>
         </form>
-      </div>
     </footer>
   </body>
 </html>

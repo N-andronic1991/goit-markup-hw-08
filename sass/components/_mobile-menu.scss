@@ -44,6 +44,7 @@
 
 .mobile-menu__list{
 	@include list;
+	margin-bottom: auto;
 }
 
 .mobile-menu__item{

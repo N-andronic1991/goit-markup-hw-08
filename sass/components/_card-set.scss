@@ -1,19 +1,35 @@
 .card {
 	@include list;
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--card-set-gap);
 	/* margin-top: calc(-1 * var(--card-set-gap));
 	margin-left: calc(-1 * var(--card-set-gap)); */
+
+	@media(min-width: $tablet){
+		display: flex;
+	    flex-wrap: wrap;
+		gap: var(--card-set-gap);
+	}
 }
 
 .card__item {
-	flex-basis: calc((100% - 2* var(--card-set-gap)) / 3);
+	background-color: var(--primary-bgd-color);
+
+	@media(max-width: 767px){
+          max-width: 450px;
+
+		&:not(:last-child){
+            margin-bottom: var(--card-set-gap);
+		} 
+	}
+	@media(min-width: $tablet){
+		flex-basis: calc((100% - var(--card-set-gap)) / 2);
+	}
+	@media(min-width: $desktop){
+		flex-basis: calc((100% - 2* var(--card-set-gap)) / 3);
+	}
+	
 	/* flex-basis: calc(100% / 3 - var(--card-set-gap)); */
 	/* margin-left: var(--card-set-gap);
     margin-top:  var(--card-set-gap); */
-
-	background-color: var(--primary-bgd-color);
 }
 
 .card__link {
@@ -52,11 +68,21 @@
 }
 
 .card__description {
-	padding: 63px 24px 0 24px;
-	max-width: 322px;
+	padding: 15px;
 	font-size: 18px;
 	line-height: 1.56;
 	color: #fff;
+
+	@media (min-width: $mobile){
+		padding: 77px 24px;
+	}
+	@media(min-width: $tablet){
+		padding: 49px 24px 77px 24px;
+	}
+
+	@media(min-width: $desktop){
+		padding: 63px 24px;
+	}
 }
 
 

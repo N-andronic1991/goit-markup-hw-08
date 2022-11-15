@@ -8,9 +8,15 @@
 .portfolio-filter {
 	@include list;
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	gap: 8px;
 	margin-bottom: 50px;
+
+	@media (min-width: 768px){
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
 }
 
 .portfolio-filter__button {
