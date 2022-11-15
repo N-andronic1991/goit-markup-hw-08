@@ -1,0 +1,122 @@
+.hero {
+	padding: 118px 0;
+
+	background-color: var(--secondary-bgd-color);
+	text-align: center;
+
+	@media (min-width: $desktop){
+		padding: 200px 0;
+	}
+}
+
+.hero__overlay {
+	max-width: 480px;
+	min-height: 400px;
+	margin: 0 auto;
+	background-image: var(--linear-gradient),
+		url(../images/hero-mobile-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx){
+		background-image: var(--linear-gradient), url(../images/hero-mobile-bg@2x.jpg);
+	}
+	
+	@media screen and (min-device-pixel-ratio: 3),
+	screen and (min-resolution: 288dpi),
+	screen and (min-resolution: 3dppx) {
+		background-image: var(--linear-gradient), url(../images/hero-mobile-bg@3x.jpg);
+		}
+
+	@media (min-width: $tablet){
+		max-width: 768px;
+		min-height: 400px;
+		background-image: var(--linear-gradient),
+			url(../images/hero-tablet-bg.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+			background-image: var(--linear-gradient), url(../images/hero-tablet-bg@2x.jpg);
+		}
+			
+		@media screen and (min-device-pixel-ratio: 3),
+		screen and (min-resolution: 288dpi),
+		screen and (min-resolution: 3dppx) {
+			background-image: var(--linear-gradient), url(../images/hero-tablet-bg@3x.jpg);
+		}
+	}
+         
+		@media (min-width: $desktop){
+			max-width: 1600px;
+			min-height: 600px;
+			background-image: var(--linear-gradient),
+				url(../images/hero-desktop-bg.jpg);
+		
+			@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+				background-image: var(--linear-gradient), url(../images/hero-desktop-bg@2x.jpg);
+			}
+		
+			@media screen and (min-device-pixel-ratio: 3),
+			screen and (min-resolution: 288dpi),
+			screen and (min-resolution: 3dppx) {
+				background-image: var(--linear-gradient), url(../images/hero-desktop-bg@3x.jpg);
+			}
+		}
+
+}
+
+
+.hero__title {
+	max-width: 360px;
+	margin: 0 auto 30px auto;
+
+	color: var(--secondary-text-color);
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.62;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	@media (min-width: $desktop){
+		max-width: 696px;
+		font-size: 44px;
+		line-height: 1.36;
+	}
+}
+
+.hero__btn {
+	min-width: 200px;
+	max-height: 50px;
+	padding: 10px 24px;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	color: var(--secondary-text-color);
+	background-color: var(--accent-color);
+
+	transition: background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+
+	&:hover, &:focus{
+		background-color: var(--btn-bgd-active);
+		box-shadow: var(--shadow);
+	}
+
+	@media (min-width: $desktop){
+		min-width: 216px;
+		padding: 10px 32px;
+	}
+}
+

@@ -1,0 +1,40 @@
+.portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+/* Filter portfolio */
+
+.portfolio-filter {
+	@include list;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}
+
+.portfolio-filter__button {
+	min-width: 25px;
+	padding: 6px 22px;
+
+	background-color: var(--other-bgd);
+	color: var(--main-title-text-color);
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.03em;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+
+	transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+   
+	&:hover, &:focus {
+		background-color: var(--accent-color);
+		color: var(--secondary-text-color);
+		box-shadow: var(--shadow);
+	}
+}
+

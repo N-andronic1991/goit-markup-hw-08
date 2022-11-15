@@ -1,0 +1,37 @@
+:root {
+    --font-text: 'Roboto', sans-serif;
+	--font-logo: 'Raleway', sans-serif;
+
+	--primary-bgd-color: #fff;
+	--secondary-bgd-color: #2f303a;
+	--footer-icon-bgd: rgba(255, 255, 255, 0.1);
+	--other-bgd: #f5f4fa;
+	--main-title-text-color: #212121;
+	--primary-text-color: #757575;
+	--secondary-text-color: #fff;
+	--accent-color: #2196f3;
+	--universal-color: #000000;
+	--other-text-color: rgba(255, 255, 255, 0.6);
+	--border-color: #ececec;
+	--border-hover-color: rgba(0, 0, 0, 0.25);
+	--shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	--icon-color: #afb1b8;
+	--card-set-gap: 30px;
+	--icon-set-gap: 10px;
+	--btn-bgd-active: #188ce8;
+	--picture-sign-bgd: rgba(47, 48, 58, 0.8);
+	--card-overlay: rgba(33, 150, 243, 0.9);
+	--backdrop-bgd: rgba(0, 0, 0, 0.1);
+	--input-border-color: rgba(255, 255, 255, 0.3);
+	--contact-form-input-border: rgba(33, 33, 33, 0.2);
+	--placeholder-color: rgba(117, 117, 117, 0.5);
+
+	--modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	--linear-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+	
+	--transition-duration: 250ms;
+	--transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	
+}

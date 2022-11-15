@@ -1,0 +1,65 @@
+.team {
+	background-color: #f5f4fa;
+}
+
+.team__list {
+	@include list;
+
+	@media (min-width: $tablet){
+		display: flex;
+		flex-wrap: wrap;
+	    gap: var(--card-set-gap);
+	}
+
+	@media (min-width: $desktop) {
+		display: flex;
+	    gap: var(--card-set-gap);
+    }
+}
+.team__item {
+	overflow: hidden;
+	max-width: 450px;
+	background-color: var(--primary-bgd-color);
+	border-bottom: 1px solid var(--border-hover-color);
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	@media (max-width: 767px){
+	   &:not(:last-child){
+		margin-bottom: var(--card-set-gap);
+	   }
+	}
+
+	@media (min-width: $tablet) {
+		flex-basis: calc((100% - var(--card-set-gap)) / 2);
+	}
+
+	@media (min-width: $desktop) {
+		flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
+	}
+}
+.team__thumb{
+	overflow: hidden;
+}
+
+.team__content {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	margin-bottom: 10px;
+}
+
+.team__text {
+	color: var(--primary-text-color);
+	font-size: 16px;
+	line-height: 1.19;
+	margin-bottom: 16px;
+}
+
+.team__icon--color{
+	fill: var(--icon-color);
+}
