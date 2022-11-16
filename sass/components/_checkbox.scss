@@ -27,16 +27,24 @@
 
 .checkbox__icon {
 	position: absolute;
-	top: 50%;
-	left: 16px;
-	transform: translateY(-50%);
+	top: 0;
+	left: 10px;
+	
 	border: 2px solid var(--main-title-text-color);
 	border-radius: 2px;
 	z-index: -1;
 	transition: background-color var(--transition-duration) var(--transition-timing-function);
 
+	@media (min-width: $mobile){
+		top: 50%;
+		left: 16px;
+		transform: translateY(-50%);
+	}
+
 	@media (min-width: 768px){
+		top: 50%;
 		left: 24px;
+		transform: translateY(-50%);
 	}
 
 	.checkbox__input:checked + & {

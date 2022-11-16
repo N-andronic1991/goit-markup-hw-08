@@ -34,7 +34,9 @@
 
 .card__link {
 	@include link;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 
 	&:hover, &:focus {
@@ -69,11 +71,12 @@
 
 .card__description {
 	padding: 15px;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.56;
 	color: #fff;
 
 	@media (min-width: $mobile){
+		font-size: 18px;
 		padding: 77px 24px;
 	}
 	@media(min-width: $tablet){
@@ -91,6 +94,7 @@
 	padding: 20px 24px;
 	border: 1px solid var(--border-color);
 	border-top: 0;
+	flex-grow: 1;
 }
 
 .card__label {

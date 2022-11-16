@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
     <title>Webstudio homework project</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -30,12 +29,12 @@
           </button>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="./index.html"
-                >Студія</a
-              >
+              <a class="menu__link" href="./index.html">Студія</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--current" href="./portfolio.html">Портфоліо</a>
+              <a class="menu__link menu__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Контакти</a>
@@ -67,7 +66,10 @@
           <!-- Фільтр портфоліо -->
           <ul class="portfolio-filter">
             <li class="portfolio-filter__item">
-              <button class="portfolio-filter__button" type="button">
+              <button
+                class="portfolio-filter__button portfolio-filter__button--size"
+                type="button"
+              >
                 Усі
               </button>
             </li>
@@ -98,12 +100,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-first-card.jpg"
-                    alt="Веб-сайт на екрані ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-first-card-desktop-370.jpg 370w,
+                        ./images/portfolio-first-card-desktop-740.jpg 740w,
+                        ./images/portfolio-first-card-tablet-354.jpg  354w,
+                        ./images/portfolio-first-card-tablet-708.jpg  708w,
+                        ./images/portfolio-first-card-mobile-450.jpg  450w,
+                        ./images/portfolio-first-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-first-card-mobile-450.jpg"
+                      alt="Веб-сайт на екрані ноутбука"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -123,12 +138,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-second-card.jpg"
-                    alt="Баскетбол шпалери арт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-second-card-desktop-370.jpg 370w,
+                        ./images/portfolio-second-card-desktop-740.jpg 740w,
+                        ./images/portfolio-second-card-tablet-354.jpg  354w,
+                        ./images/portfolio-second-card-tablet-708.jpg  708w,
+                        ./images/portfolio-second-card-mobile-450.jpg  450w,
+                        ./images/portfolio-second-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-second-card-mobile-450.jpg"
+                      alt="Баскетбол шпалери арт"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -150,12 +178,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-third-card.jpg"
-                    alt="Логотип Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-third-card-desktop-370.jpg 370w,
+                        ./images/portfolio-third-card-desktop-740.jpg 740w,
+                        ./images/portfolio-third-card-tablet-354.jpg  354w,
+                        ./images/portfolio-third-card-tablet-708.jpg  708w,
+                        ./images/portfolio-third-card-mobile-450.jpg  450w,
+                        ./images/portfolio-third-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-third-card-mobile-450.jpg"
+                      alt="Логотип Seafood"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -177,12 +218,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-forth-card.jpg"
-                    alt="Накладні чорні навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-forth-card-desktop-370.jpg 370w,
+                        ./images/portfolio-forth-card-desktop-740.jpg 740w,
+                        ./images/portfolio-forth-card-tablet-354.jpg  354w,
+                        ./images/portfolio-forth-card-tablet-708.jpg  708w,
+                        ./images/portfolio-forth-card-mobile-450.jpg  450w,
+                        ./images/portfolio-forth-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-forth-card-mobile-450.jpg"
+                      alt="Накладні чорні навушники"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -204,12 +258,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-fifth-card.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-fifth-card-desktop-370.jpg 370w,
+                        ./images/portfolio-fifth-card-desktop-740.jpg 740w,
+                        ./images/portfolio-fifth-card-tablet-354.jpg  354w,
+                        ./images/portfolio-fifth-card-tablet-708.jpg  708w,
+                        ./images/portfolio-fifth-card-mobile-450.jpg  450w,
+                        ./images/portfolio-fifth-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-fifth-card-mobile-450.jpg"
+                      alt="Дві коробки"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -231,12 +298,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-sixth-card.jpg"
-                    alt="Зображення монітору комп'ютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-sixth-card-desktop-370.jpg 370w,
+                        ./images/portfolio-sixth-card-desktop-740.jpg 740w,
+                        ./images/portfolio-sixth-card-tablet-354.jpg  354w,
+                        ./images/portfolio-sixth-card-tablet-708.jpg  708w,
+                        ./images/portfolio-sixth-card-mobile-450.jpg  450w,
+                        ./images/portfolio-sixth-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-sixth-card-mobile-450.jpg"
+                      alt="Зображення монітору комп'ютера"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -258,12 +338,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-seventh-card.jpg"
-                    alt="Видання"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-seventh-card-desktop-370.jpg 370w,
+                        ./images/portfolio-seventh-card-desktop-740.jpg 740w,
+                        ./images/portfolio-seventh-card-tablet-354.jpg  354w,
+                        ./images/portfolio-seventh-card-tablet-708.jpg  708w,
+                        ./images/portfolio-seventh-card-mobile-450.jpg  450w,
+                        ./images/portfolio-seventh-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-seventh-card-mobile-450.jpg"
+                      alt="Видання"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -285,12 +378,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-eighth-card.jpg"
-                    alt="Ярлик"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-eighth-card-desktop-370.jpg 370w,
+                        ./images/portfolio-eighth-card-desktop-740.jpg 740w,
+                        ./images/portfolio-eighth-card-tablet-354.jpg  354w,
+                        ./images/portfolio-eighth-card-tablet-708.jpg  708w,
+                        ./images/portfolio-eighth-card-mobile-450.jpg  450w,
+                        ./images/portfolio-eighth-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-eighth-card-mobile-450.jpg"
+                      alt="Ярлик"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -310,12 +416,25 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio-ninth-card.jpg"
-                    alt="Людина друкує на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-ninth-card-desktop-370.jpg 370w,
+                        ./images/portfolio-ninth-card-desktop-740.jpg 740w,
+                        ./images/portfolio-ninth-card-tablet-354.jpg  354w,
+                        ./images/portfolio-ninth-card-tablet-708.jpg  708w,
+                        ./images/portfolio-ninth-card-mobile-450.jpg  450w,
+                        ./images/portfolio-ninth-card-mobile-900.jpg  900w
+                      "
+                      media="(min-width: 1200px), (min-width: 768px), (max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-ninth-card-mobile-450.jpg"
+                      alt="Людина друкує на ноутбуці"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -427,17 +546,14 @@
         <form name="subscribe__form">
           <div class="footer__form">
             <div class="footer__form-wrap">
-
-              <label class="footer__label" for="user-email"
-                >Підпишіться на розсилку </label>
+              <label class="footer__label">Підпишіться на розсилку </label>
               <input
                 class="footer__input"
                 type="email"
                 name="email"
-                id="user-email"
                 placeholder="E-mail"
               />
-              </div>
+            </div>
             <button class="button footer__button" type="submit">
               Підписатися
               <svg class="footer__icon-send" width="24" height="24">
@@ -446,6 +562,65 @@
             </button>
           </div>
         </form>
+      </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="container mobile-menu js-menu-container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="mobile-menu__icon-close" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link menu__link--current"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+          <a
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--tel"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Instagram </a>
+          <span class="mobile-menu__line"></span>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Twitter </a>
+          <span class="mobile-menu__line"></span>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Facebook </a>
+          <span class="mobile-menu__line"></span>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Linkedin </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -8,14 +8,19 @@
 .portfolio-filter {
 	@include list;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	gap: 8px;
 	margin-bottom: 50px;
+
+	@media (max-width: 767px){
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		row-gap: 8px;
+		column-gap: 15px;
+	}
 
 	@media (min-width: 768px){
 		flex-wrap: nowrap;
 		justify-content: center;
+		gap: 8px;
 	}
 }
 
@@ -36,6 +41,10 @@
 	border-radius: 4px;
 
 	transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+
+	&--size{
+		padding: 6px 25px;
+	}
    
 	&:hover, &:focus {
 		background-color: var(--accent-color);
