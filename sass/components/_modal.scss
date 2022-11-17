@@ -43,13 +43,13 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) scale(1);
-	    width: 528px;
-	    height: 581px;
+
+	 }
+	 @media (min-width: $desktop){
+		width: 528px;
+		height: 581px;
 	 }
 
-		 .backdrop.is-hidden & {
-		 	transform: translate(-50%, -50%) scale(0.5);
-		}
 	}
 
 .modal__btn-close {
